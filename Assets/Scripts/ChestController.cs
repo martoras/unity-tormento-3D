@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -27,10 +28,15 @@ public class ChestController : MonoBehaviour
     {
         Debug.Log("Chest: ");
         Debug.Log(other.name);
-        Loot();
+        var items = Loot();
+        foreach (var item in items)
+        {
+            Instantiate(item.rarity.prefab, transform.position, Quaternion.identity);
+        }
+        Destroy(gameObject);
     }
 
-    private void Loot()
+    private List<ItemSO> Loot()
     {
         rarityList.rarities.Sort((RaritySO r, RaritySO s) => r.baseProbability.CompareTo(s.baseProbability));
 
@@ -43,10 +49,12 @@ public class ChestController : MonoBehaviour
                 lootRarity = rarity;
                 break;
             }
+            rnd -= rarity.baseProbability;
         }
-        var items = itemList.items.Where((ItemSO so) => so.rarity.name == lootRarity.name);
+        var items = itemList.items.Where((ItemSO so) => so.rarity.name == lootRarity.name).ToList();
         Debug.Log("Loot: ");
         Debug.Log(lootRarity.name);
         Debug.Log(items.First().name);
+        return items;
     }
 }
