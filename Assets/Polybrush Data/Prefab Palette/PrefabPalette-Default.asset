@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Epic
-  m_EditorClassIdentifier: Assembly-CSharp::RaritySO
-  prefab: {fileID: 5660203008055953460, guid: 5dfdbd3646503cde0839170a3d7fb73f, type: 3}
-  baseProbability: 6
+  m_Script: {fileID: 11500000, guid: dc38003c0e0db6641a4762d4f392de52, type: 3}
+  m_Name: PrefabPalette-Default
+  m_EditorClassIdentifier: 
+  prefabs: []

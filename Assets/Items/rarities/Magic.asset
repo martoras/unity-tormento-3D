@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Magic
   m_EditorClassIdentifier: Assembly-CSharp::RaritySO
   prefab: {fileID: 6062776988218314453, guid: b1dcab8e8e5b0f0a3b3671fef27fab1c, type: 3}
-  baseProbability: 15
+  baseProbability: 30

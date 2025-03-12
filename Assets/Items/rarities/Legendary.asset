@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Legendary
   m_EditorClassIdentifier: Assembly-CSharp::RaritySO
   prefab: {fileID: 8199102236396076183, guid: b72a19523bbea35fd8582e69e49ed749, type: 3}
-  baseProbability: 1
+  baseProbability: 2

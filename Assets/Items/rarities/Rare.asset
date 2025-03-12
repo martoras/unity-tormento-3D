@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Rare
   m_EditorClassIdentifier: Assembly-CSharp::RaritySO
-  name: Rare
   prefab: {fileID: 6241828900626962825, guid: ed77292959646b6c6a152f14b41921fe, type: 3}
-  baseProbability: 7
+  baseProbability: 14
