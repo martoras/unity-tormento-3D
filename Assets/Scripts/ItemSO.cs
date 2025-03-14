@@ -9,5 +9,5 @@ public class ItemSO: ScriptableObject
     public RaritySO rarity;
     public Sprite sprite;
 }
-
+ 
 

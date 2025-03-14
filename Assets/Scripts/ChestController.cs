@@ -38,7 +38,8 @@ public class ChestController : MonoBehaviour
 
     private List<ItemSO> Loot()
     {
-        rarityList.rarities.Sort((RaritySO r, RaritySO s) => r.baseProbability.CompareTo(s.baseProbability));
+        rarityList.rarities.Sort(
+            (RaritySO r, RaritySO s) => r.baseProbability.CompareTo(s.baseProbability));
 
         var rnd = Random.Range(0f, 100.0f);
         RaritySO lootRarity = rarityList.rarities.Last();
