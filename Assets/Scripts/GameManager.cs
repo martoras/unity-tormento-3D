@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] private Vector3 spawnPosition = new Vector3(45.5f, 2.25f, 49.5f);
     [SerializeField] private int rowSize = 48;
-    [SerializeField] private float chestWidth = 2.0f;
-    [SerializeField] private float chestHeight = 2.0f;
+    [SerializeField] private float chestWidth = 4.0f;
+    [SerializeField] private float chestHeight = 4.0f;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
